@@ -20,11 +20,12 @@ Rules I switch off and why:
 * SA1310 - FieldNamesMustNotContainUnderscore (underscore are used in tests)
 * SA1400 - AccessModifierMustBeDeclared (I prefer to not put "private" before private methods)
 * SA1407 - ArithmeticExpressionsMustDeclarePrecedence (up to code review to make it readable, on the other hand when applying this rule R# is suggesting "remove redundant parentheses")
+* SA1516 - ElementsMustBeSeparatedByBlankLine (it forces to place empty lines between each property definition) 
 * SA1611 - ElementParametersMustBeDocumented (no required documentation)
 * SA1615 - ElementReturnValueMustBeDocumented (no required documentation)
 
 
-Rules I need to investigate more: SA1009, SA1204, SA1313, SA1516, SA1614
+Rules I need to investigate more: SA1009, SA1204, SA1313, SA1614
 
 
 All rules that are not excluded here I would use for green field project and I would be changing to meet these rules in brown field project. But in brownfield sometimes allow to disable more rules "temporary", because obviously some of the require some time to spend on fixing them.
