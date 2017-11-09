@@ -14,10 +14,12 @@ Rules I switch off and why:
 * SA1122 - UseStringEmptyForEmptyStrings (rather temporary)
 * SA1200 - UsingDirectivesMustBePlacedCorrectly (most of C# world place using outside namespace, so I don't want to fight again it)
 * SA1201 - ElementsMustAppearInTheCorrectOrder (up to a team, hard to maintain always this "Order")
-* SA1202 - ElementsMustBeOrderedByAccess (assume couple of public methods in class, I want to have private methods used by a public method just below this public method, not below all other public methods)
+* SA1202 - ElementsMustBeOrderedByAccess, similar to SA1204 (assume couple of public methods in class, I want to have private methods used by a public method just below this public method, not below all other public methods)
+* SA1204 - StaticElementsMustAppearBeforeInstanceElements, similar to SA1202 (Order of methods depends on which method is used by which method, and having _private static_ method in the middle of class is fine)
 * SA1300 - ElementMustBeginWithUpperCaseLetter
 * SA1309 - FieldNamesMustNotBeginWithUnderscore (private fields should begin with underscore)
 * SA1310 - FieldNamesMustNotContainUnderscore (underscore are used in tests)
+* SA1313 - ParameterNamesMustBeginWithLowerCaseLetter (in UT when using AutoFixture, some test method arguments can be "_", and it is indicator that value is not important)
 * SA1400 - AccessModifierMustBeDeclared (I prefer to not put "private" before private methods)
 * SA1407 - ArithmeticExpressionsMustDeclarePrecedence (up to code review to make it readable, on the other hand when applying this rule R# is suggesting "remove redundant parentheses")
 * SA1516 - ElementsMustBeSeparatedByBlankLine (it forces to place empty lines between each property definition) 
@@ -25,7 +27,7 @@ Rules I switch off and why:
 * SA1615 - ElementReturnValueMustBeDocumented (no required documentation)
 
 
-Rules I need to investigate more: SA1009, SA1204, SA1313, SA1614
+Rules I need to investigate more: SA1009, SA1614
 
 
 All rules that are not excluded here I would use for green field project and I would be changing to meet these rules in brown field project. But in brownfield sometimes allow to disable more rules "temporary", because obviously some of the require some time to spend on fixing them.
