@@ -8,6 +8,9 @@ Link to .gitignore (maintained by me): https://gist.github.com/kmorcinek/2710267
 
 ## StyleCop (StyleCop Analyzers)
 
+Place for searching for rule names and examples:
+https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation
+
 Rules I switch off and why:
 * SA1101 - PrefixLocalCallsWithThis (remove obviousness)
 * SA1111 - ClosingParenthesisMustBeOnLineOfLastParameter (rather temporary, but in some cases improves viewing history in source control)
