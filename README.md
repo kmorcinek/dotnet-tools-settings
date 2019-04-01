@@ -11,6 +11,7 @@ https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation
 
 Rules I switch off and why:
 
+* SA1003 SymbolsMustBeSpacedCorrectly & SA1009 ClosingParenthesisMustBeSpacedCorrectly - conflicts with other (i.e default cleanup in VS+R#/Rider)
 * SA1101 - PrefixLocalCallsWithThis (remove obviousness)
 * SA1111 - ClosingParenthesisMustBeOnLineOfLastParameter (rather temporary, but in some cases improves viewing history in source control)
 * SA1122 - UseStringEmptyForEmptyStrings (rather temporary)
@@ -28,7 +29,7 @@ Rules I switch off and why:
 * SA1611 - ElementParametersMustBeDocumented (no required documentation)
 * SA1615 - ElementReturnValueMustBeDocumented (no required documentation)
 
-Rules I need to investigate more: SA1009, SA1614
+Rules I need to investigate more: SA1614
 
 All rules that are not excluded here I would use for green field project and I would be changing to meet these rules in brown field project. But in brownfield sometimes allow to disable more rules "temporary", because obviously some of them require some time on fixing them.
 
