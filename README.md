@@ -6,8 +6,10 @@ Link to .gitignore (maintained by me): https://gist.github.com/kmorcinek/2710267
 
 ## StyleCop (StyleCop Analyzers)
 
+My [StyleCopDefault.ruleset](https://github.com/kmorcinek/dotnet-tools-settings/blob/master/StyleCopDefault.ruleset) set of rules I apply for project I am working with.
+
 Place for searching for rule names and examples:
-https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation
+[StyleCopAnalyzers documentation](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation)
 
 Rules I switch off and why:
 
@@ -32,3 +34,6 @@ Rules I switch off and why:
 Rules I need to investigate more: SA1614
 
 All rules that are not excluded here I would use for green field project and I would be changing to meet these rules in brown field project. But in brownfield sometimes allow to disable more rules "temporary", because obviously some of them require some time on fixing them.
+
+What is by default Enabled or Disabled: [StyleCopAnalyzers Status](https://github.com/kmorcinek/dotnet-tools-settings/blob/master/StyleCopDefault.ruleset)
+
