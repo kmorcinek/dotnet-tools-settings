@@ -32,10 +32,3 @@ Rules I switch off and why:
 Rules I need to investigate more: SA1614
 
 All rules that are not excluded here I would use for green field project and I would be changing to meet these rules in brown field project. But in brownfield sometimes allow to disable more rules "temporary", because obviously some of them require some time on fixing them.
-
-## Small programs I need
-
-* console program to synchronize common part of my .gitignore with what is on the server
-  * download from https://gist.github.com/kmorcinek/2710267
-  * from local .gitignore take the part after the placeholder ("# End of core ignore list, below put you custom 'per project' settings (patterns or path)")
-  * concatenate two parts
